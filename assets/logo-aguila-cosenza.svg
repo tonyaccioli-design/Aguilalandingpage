@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="76" viewBox="0 0 360 76" role="img" aria-labelledby="title desc">
+  <title id="title">Aguila Cosenza Advogados</title>
+  <desc id="desc">Logo Aguila Cosenza com assinatura Advogados</desc>
+  <rect width="76" height="76" fill="#171717"/>
+  <path d="M38 16 58 60H47.5l-3.2-7.9H31.5L28.3 60H18L38 16Zm3.5 28.5L38 35.6l-3.6 8.9h7.1Z" fill="#F5F1EC"/>
+  <text x="96" y="34" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="800" letter-spacing="2" fill="#171717">AGUILA</text>
+  <text x="209" y="34" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="800" letter-spacing="2" fill="#C8102E">COSENZA</text>
+  <rect x="96" y="45" width="214" height="1.6" fill="#C8102E"/>
+  <text x="96" y="65" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="5" fill="#626262">ADVOGADOS</text>
+</svg>
