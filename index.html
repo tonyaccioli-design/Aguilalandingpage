@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transação Tributária - Edital PGDAU 11/2025 | Águila Cosenza</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#171717;
+  --ink-2:#2f2e2e;
+  --muted:#626262;
+  --paper:#ffffff;
+  --cream:#f5f1ec;
+  --soft:#eee8df;
+  --red:#c8102e;
+  --red-dark:#970b20;
+  --line:#ded7cd;
+  --ok:#1f8f5b;
+  --warn:#b46b00;
+  --shadow:0 24px 70px rgba(21,18,15,.16);
+}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.5;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{width:min(1160px,calc(100% - 40px));margin-inline:auto}
+.topbar{position:sticky;top:0;z-index:20;background:rgba(245,241,236,.94);backdrop-filter:blur(16px);border-bottom:1px solid rgba(222,215,205,.75)}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+.brand-mark{width:34px;height:34px;background:var(--ink-2);color:#fff;display:grid;place-items:center;font-weight:800}
+.brand span span{color:var(--red)}
+.brand-logo{height:46px;width:auto}
+.nav-links{display:flex;list-style:none;gap:28px;color:#4d4d4d;font-size:13px;font-weight:600}
+.nav-links a:hover{color:var(--red)}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:0;min-height:48px;padding:14px 24px;background:var(--red);color:#fff;font-weight:800;font-size:13px;letter-spacing:.02em;cursor:pointer;transition:.2s ease}
+.btn:hover{background:var(--red-dark);transform:translateY(-1px)}
+.btn.outline{background:transparent;color:var(--red);border:1px solid var(--red)}
+.btn.outline:hover{background:var(--red);color:#fff}
+.hero{position:relative;background:#1f1d1c;color:#fff;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(23,23,23,.95),rgba(23,23,23,.76) 50%,rgba(23,23,23,.25)),url("https://lp.aguilaadvogados.com/wp-content/uploads/2025/12/qwe.webp") center right/cover no-repeat}
+.hero::after{content:"";position:absolute;inset:auto 0 0;height:7px;background:var(--red)}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .85fr;gap:46px;align-items:center;min-height:720px;padding:70px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;color:#e7b9c0;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:22px}
+.eyebrow::before{content:"";width:36px;height:2px;background:var(--red)}
+h1{font-size:clamp(38px,5vw,66px);line-height:1.04;letter-spacing:-.04em;margin-bottom:22px;max-width:760px}
+.hero-copy{font-size:18px;line-height:1.75;color:rgba(255,255,255,.78);max-width:690px;margin-bottom:30px}
+.hero-points{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:720px}
+.hero-point{border-left:3px solid var(--red);background:rgba(255,255,255,.08);padding:14px 16px;color:rgba(255,255,255,.88);font-size:13px;font-weight:700}
+.form-card{background:var(--paper);color:var(--ink);box-shadow:var(--shadow);padding:32px;border-top:7px solid var(--red)}
+.form-card h2{font-size:28px;line-height:1.12;letter-spacing:-.03em;margin-bottom:8px}
+.form-card>p{color:var(--muted);font-size:14px;margin-bottom:22px}
+form{display:grid;gap:12px}
+.field{position:relative}
+.field label{display:block;font-size:12px;font-weight:800;color:#444;margin-bottom:7px}
+.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);background:#fbfaf8;min-height:48px;padding:12px 13px;font:500 14px Inter,Arial,sans-serif;color:var(--ink);outline:0}
+.field textarea{min-height:92px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--red);box-shadow:0 0 0 3px rgba(200,16,46,.1);background:#fff}
+.field.invalid input,.field.invalid select,.field.invalid textarea{border-color:var(--warn)}
+.error{display:none;font-size:12px;color:var(--warn);margin-top:5px}.field.invalid .error{display:block}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:4px}
+.form-note{font-size:11px;color:#777;line-height:1.55;margin-top:4px}
+.status{display:none;padding:13px 15px;border-left:4px solid var(--ok);background:#eef9f3;color:#27543f;font-size:13px;margin-bottom:16px}
+.status.show{display:block}.status.warn{border-left-color:var(--warn);background:#fff6e7;color:#754400}
+.section{padding:88px 0}
+.section.white{background:#fff}.section.dark{background:#22201f;color:#fff}.section.red{background:var(--red);color:#fff}
+.section-head{max-width:760px;margin-bottom:38px}
+.section-kicker{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin-bottom:12px}
+.dark .section-kicker,.red .section-kicker{color:#f1c9cf}
+h2{font-size:clamp(32px,4vw,50px);line-height:1.08;letter-spacing:-.035em;margin-bottom:16px}
+.lead{font-size:18px;line-height:1.75;color:var(--muted)}.dark .lead,.red .lead{color:rgba(255,255,255,.76)}
+.problem-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}
+.image-panel{min-height:470px;background:url("assets/gabriel-e-danilo.webp") center 30%/cover no-repeat;position:relative}
+.bullets{display:grid;gap:14px;list-style:none}
+.bullets li{display:flex;gap:12px;align-items:flex-start;font-size:16px;color:#333}
+.bullets li::before{content:"";width:9px;height:9px;background:var(--red);margin-top:8px;flex:0 0 auto}
+.dark .bullets li,.red .bullets li{color:rgba(255,255,255,.86)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service-card{background:#fff;border:1px solid var(--line);padding:28px;min-height:210px}
+.service-card strong{display:block;font-size:18px;line-height:1.25;margin-bottom:10px;color:var(--ink)}
+.service-card p{color:var(--muted);font-size:14px;line-height:1.65}
+.dark .service-card{background:#2d2a29;border-color:#494442}.dark .service-card strong{color:#fff}.dark .service-card p{color:rgba(255,255,255,.68)}
+.numbered{counter-reset:item;display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.numbered article{counter-increment:item;background:#fff;border-left:5px solid var(--red);padding:24px;box-shadow:0 14px 38px rgba(21,18,15,.08)}
+.numbered article::before{content:"0" counter(item);display:block;color:var(--red);font-weight:800;font-size:13px;margin-bottom:9px}
+.numbered h3{font-size:18px;margin-bottom:8px}.numbered p{color:var(--muted);font-size:14px;line-height:1.65}
+.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.benefit{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);padding:24px}.benefit strong{display:block;font-size:18px;margin-bottom:8px}.benefit p{color:rgba(255,255,255,.75);font-size:14px}
+.faq{display:grid;gap:12px;max-width:900px}.faq details{background:#fff;border:1px solid var(--line);padding:20px 22px}.faq summary{font-weight:800;cursor:pointer}.faq p{margin-top:12px;color:var(--muted)}
+.final-cta{display:grid;grid-template-columns:1fr auto;gap:26px;align-items:center;background:#fff;padding:36px;box-shadow:var(--shadow);border-top:7px solid var(--red)}
+footer{background:#161514;color:rgba(255,255,255,.7);padding:36px 0;font-size:13px}
+.footer-inner{display:flex;justify-content:space-between;gap:24px;align-items:center}
+.reveal{opacity:0;transform:translateY(20px);transition:.65s ease}.reveal.visible{opacity:1;transform:none}
+@media(max-width:980px){
+  .nav-links{display:none}.hero-grid,.problem-grid,.final-cta{grid-template-columns:1fr}.hero-grid{padding:46px 0;min-height:auto}.hero-points,.cards,.benefits,.numbered{grid-template-columns:1fr}.image-panel{min-height:340px}.form-actions,.form-row{grid-template-columns:1fr}.footer-inner{flex-direction:column;align-items:flex-start}
+}
+@media(max-width:620px){
+  .container{width:min(100% - 28px,1160px)}.nav{height:68px}.brand{font-size:13px}.nav .btn{display:none}.form-card{padding:22px}.section{padding:64px 0}.hero::before{background:linear-gradient(rgba(23,23,23,.9),rgba(23,23,23,.86)),url("https://lp.aguilaadvogados.com/wp-content/uploads/2025/12/qwe.webp") center/cover no-repeat}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="#" aria-label="Águila Cosenza Advogados"><img class="brand-logo" src="assets/logo-aguila-cosenza.webp" alt="Águila Cosenza Advogados"></a>
+    <ul class="nav-links">
+      <li><a href="#riscos">Riscos</a></li>
+      <li><a href="#modalidades">Modalidades</a></li>
+      <li><a href="#beneficios">Benefícios</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a class="btn" href="#formulario">Solicitar análise</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="reveal">
+        <div class="eyebrow">Edital PGDAU - Maio de 2026</div>
+        <h1>Regularize débitos inscritos em Dívida Ativa da União com estratégia e segurança jurídica.</h1>
+        <p class="hero-copy">A PGFN abriu modalidades de transação para empresas que precisam reorganizar passivos fiscais, proteger caixa e recuperar previsibilidade. O enquadramento correto evita adesões inadequadas e perda de benefícios.</p>
+        <div class="hero-points">
+          <div class="hero-point">Prazo final: 29/05/2026 às 19h</div>
+          <div class="hero-point">Débitos de até R$ 45 milhões</div>
+          <div class="hero-point">Análise por modalidade e risco</div>
+        </div>
+      </div>
+
+      <aside class="form-card reveal" id="formulario">
+        <div id="formStatus" class="status" role="status" aria-live="polite"></div>
+        <h2>Preencha o formulário e solicite a análise inicial</h2>
+        <p>Envie as informações básicas para avaliarmos o possível enquadramento da sua empresa.</p>
+        <form id="leadForm" action="https://formsubmit.co/marketing@aguilaadvogados.com" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="Solicitação de análise - Edital PGDAU 11/2025">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" id="dataEnvio" name="Data do envio" value="">
+          <div class="form-row">
+            <div class="field"><label for="nome">Nome *</label><input id="nome" name="Nome" type="text" autocomplete="name" required placeholder="Seu nome"><span class="error">Informe seu nome.</span></div>
+            <div class="field"><label for="empresa">Empresa *</label><input id="empresa" name="Empresa" type="text" autocomplete="organization" required placeholder="Razão social"><span class="error">Informe a empresa.</span></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label for="cnpj">CNPJ *</label><input id="cnpj" name="CNPJ" type="text" inputmode="numeric" required placeholder="00.000.000/0000-00"><span class="error">Informe um CNPJ válido.</span></div>
+            <div class="field"><label for="cargo">Cargo *</label><input id="cargo" name="Cargo" type="text" required placeholder="Ex: Diretor Financeiro"><span class="error">Informe seu cargo.</span></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label for="whatsapp">Telefone *</label><input id="whatsapp" name="WhatsApp" type="tel" inputmode="tel" required placeholder="(00) 00000-0000"><span class="error">Informe um telefone válido.</span></div>
+            <div class="field"><label for="email">Email corporativo *</label><input id="email" name="E-mail" type="email" autocomplete="email" required placeholder="email@empresa.com.br"><span class="error">Informe um e-mail válido.</span></div>
+          </div>
+          <div class="field"><label for="cidade">Cidade / UF *</label><input id="cidade" name="Cidade / UF" type="text" required placeholder="Ex: São Paulo / SP"><span class="error">Informe cidade e UF.</span></div>
+          <div class="field"><label for="valor">Valor aproximado da dívida</label><select id="valor" name="Valor aproximado"><option value="">Selecione</option><option>Até R$ 100 mil</option><option>R$ 100 mil a R$ 1 milhão</option><option>R$ 1 milhão a R$ 10 milhões</option><option>R$ 10 milhões a R$ 45 milhões</option><option>Acima de R$ 45 milhões</option></select></div>
+          <div class="form-row">
+            <div class="field"><label for="dividaAtiva">Dívida Ativa?</label><select id="dividaAtiva" name="Dívida inscrita em Dívida Ativa"><option value="">Selecione</option><option>Sim</option><option>Não</option><option>Não sei</option></select></div>
+            <div class="field"><label for="execucao">Execução fiscal?</label><select id="execucao" name="Execução fiscal em andamento"><option value="">Selecione</option><option>Sim</option><option>Não</option><option>Não sei</option></select></div>
+          </div>
+          <div class="field"><label for="objetivo">Objetivo principal *</label><select id="objetivo" name="Objetivo principal" required><option value="">Selecione</option><option>Entender se posso aderir</option><option>Revisar modalidade disponível</option><option>Avaliar impacto no caixa</option><option>Regularizar para certidão</option><option>Resolver cobrança ou execução</option><option>Reorganizar passivo tributário</option></select><span class="error">Selecione o objetivo.</span></div>
+          <div class="form-actions">
+            <button class="btn" type="submit">Enviar</button>
+            <button class="btn outline" type="button" id="copyLead">Copiar dados</button>
+          </div>
+          <p class="form-note">O envio não gera contratação automática nem análise jurídica definitiva.</p>
+        </form>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section white" id="riscos">
+    <div class="container problem-grid">
+      <div class="image-panel reveal" aria-label="Ambiente corporativo jurídico"></div>
+      <div class="reveal">
+        <div class="section-kicker">Riscos reais</div>
+        <h2>A falta de análise prévia pode custar caro para a empresa.</h2>
+        <p class="lead">A adesão à transação deve considerar elegibilidade, capacidade de pagamento, garantias, ações judiciais, fluxo de caixa e consequências de eventual rescisão.</p>
+        <ul class="bullets" style="margin-top:26px">
+          <li>Escolha de modalidade incompatível com a dívida.</li>
+          <li>Perda do prazo de adesão em 29 de maio de 2026.</li>
+          <li>Primeira parcela fora do prazo e indeferimento da negociação.</li>
+          <li>Documentação judicial incompleta ou contraditória.</li>
+          <li>Rescisão com perda de benefícios e impedimento por dois anos.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="modalidades">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="section-kicker">Modalidades do edital</div>
+        <h2>Quatro caminhos possíveis. Um enquadramento precisa ser tecnicamente seguro.</h2>
+        <p class="lead">Cada modalidade tem critérios próprios de valor, data de inscrição, situação da dívida e documentação.</p>
+      </div>
+      <div class="numbered">
+        <article class="reveal"><h3>Capacidade de pagamento</h3><p>Para dívidas inscritas até 1º de novembro de 2025, com valor consolidado de até R$ 45 milhões. A classificação da PGFN influencia prazo, entrada e descontos.</p></article>
+        <article class="reveal"><h3>Pequeno valor</h3><p>Voltada a pessoa física, MEI, ME e EPP com débitos de até 60 salários mínimos, inscritos até 30 de janeiro de 2025.</p></article>
+        <article class="reveal"><h3>Difícil recuperação ou irrecuperáveis</h3><p>Aplica-se a situações específicas, como dívidas antigas, empresas falidas, liquidadas ou com condições cadastrais previstas no edital.</p></article>
+        <article class="reveal"><h3>Seguro garantia ou carta fiança</h3><p>Para débitos garantidos judicialmente, com decisão definitiva desfavorável, observadas as condições de manutenção da garantia.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="section-kicker">Como podemos ajudar</div>
+        <h2>Atuação jurídica voltada à decisão empresarial.</h2>
+        <p class="lead">A análise não se limita ao sistema. Ela conecta edital, documentos, risco jurídico e impacto financeiro.</p>
+      </div>
+      <div class="cards">
+        <div class="service-card reveal"><strong>Diagnóstico do passivo</strong><p>Mapeamento dos débitos, datas de inscrição, valores e possíveis impedimentos.</p></div>
+        <div class="service-card reveal"><strong>Enquadramento da modalidade</strong><p>Verificação técnica das opções disponíveis e dos critérios de elegibilidade.</p></div>
+        <div class="service-card reveal"><strong>Simulação e impacto de caixa</strong><p>Apoio na leitura de condições, entrada, parcelas, descontos e riscos de rescisão.</p></div>
+        <div class="service-card reveal"><strong>Organização documental</strong><p>Revisão de garantias, execução fiscal, ações judiciais e pendências relevantes.</p></div>
+        <div class="service-card reveal"><strong>Estratégia de regularização</strong><p>Definição do melhor caminho considerando certidões, crédito, licitações e continuidade.</p></div>
+        <div class="service-card reveal"><strong>Acompanhamento da adesão</strong><p>Suporte para conduzir os próximos passos com segurança e previsibilidade.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section red" id="beneficios">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="section-kicker">Benefícios possíveis</div>
+        <h2>Regularização fiscal com leitura estratégica do edital.</h2>
+        <p class="lead">Os benefícios dependem do enquadramento e das condições oficiais da PGFN. A palavra-chave é possibilidade, não promessa.</p>
+      </div>
+      <div class="benefits">
+        <div class="benefit reveal"><strong>Prazo alongado</strong><p>Possibilidade de parcelamento conforme modalidade e perfil do contribuinte.</p></div>
+        <div class="benefit reveal"><strong>Entrada organizada</strong><p>Avaliação da entrada e do impacto no caixa antes da adesão.</p></div>
+        <div class="benefit reveal"><strong>Descontos sobre encargos</strong><p>Possibilidade de redução sobre juros, multas e encargo legal, quando aplicável.</p></div>
+        <div class="benefit reveal"><strong>Previsibilidade</strong><p>Melhor leitura do passivo e do custo real de regularização.</p></div>
+        <div class="benefit reveal"><strong>Certidões e continuidade</strong><p>Apoio para empresas que dependem de regularidade fiscal para operar.</p></div>
+        <div class="benefit reveal"><strong>Menos risco de erro</strong><p>Identificação de pontos críticos antes de confirmar uma decisão no sistema.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section white" id="faq">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="section-kicker">Perguntas frequentes</div>
+        <h2>Dúvidas comuns sobre a transação tributária.</h2>
+      </div>
+      <div class="faq reveal">
+        <details open><summary>Minha empresa pode aderir automaticamente?</summary><p>Não necessariamente. É preciso verificar valor, data de inscrição, modalidade, situação da dívida, garantias, discussão judicial e demais critérios do edital.</p></details>
+        <details><summary>O edital garante desconto?</summary><p>Não. Descontos dependem da modalidade, da capacidade de pagamento, da natureza da dívida e dos limites oficiais aplicáveis.</p></details>
+        <details><summary>O que acontece se o acordo for rescindido?</summary><p>O contribuinte pode perder benefícios, ter a cobrança retomada e ficar impedido de formalizar nova transação por determinado período, conforme regras aplicáveis.</p></details>
+        <details><summary>Preciso de análise jurídica antes de aderir?</summary><p>É recomendável. A adesão envolve consequências financeiras e jurídicas relevantes, especialmente quando há garantias, execução fiscal ou discussão judicial.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container final-cta reveal">
+      <div>
+        <div class="section-kicker">Próximo passo</div>
+        <h2 style="margin-bottom:8px">Solicite uma análise inicial do enquadramento.</h2>
+        <p class="lead">Envie os dados da empresa para avaliarmos os próximos passos de forma objetiva.</p>
+      </div>
+      <a class="btn" href="#formulario">Preencher formulário</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="brand" style="color:#fff"><img class="brand-logo" src="assets/logo-aguila-cosenza.webp" alt="Águila Cosenza Advogados"></div>
+    <p>© 2026 Águila Cosenza Advogados Associados. Conteúdo informativo. Não constitui assessoria jurídica.</p>
+  </div>
+</footer>
+
+<script>
+const CONFIG={destinationEmail:"marketing@aguilaadvogados.com",subject:"Solicitação de análise - Edital PGDAU 11/2025",storageKey:"pgdau_11_2025_leads"};
+const reveals=document.querySelectorAll(".reveal");
+const obs=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add("visible")})},{threshold:.12});
+reveals.forEach(el=>obs.observe(el));
+
+const form=document.getElementById("leadForm");
+const statusBox=document.getElementById("formStatus");
+const cnpj=document.getElementById("cnpj");
+const whatsapp=document.getElementById("whatsapp");
+const dataEnvio=document.getElementById("dataEnvio");
+
+function onlyDigits(value){return value.replace(/\D/g,"")}
+function maskCnpj(value){const d=onlyDigits(value).slice(0,14);return d.replace(/^(\d{2})(\d)/,"$1.$2").replace(/^(\d{2})\.(\d{3})(\d)/,"$1.$2.$3").replace(/\.(\d{3})(\d)/,".$1/$2").replace(/(\d{4})(\d)/,"$1-$2")}
+function maskPhone(value){const d=onlyDigits(value).slice(0,11);if(d.length<=10)return d.replace(/^(\d{2})(\d)/,"($1) $2").replace(/(\d{4})(\d)/,"$1-$2");return d.replace(/^(\d{2})(\d)/,"($1) $2").replace(/(\d{5})(\d)/,"$1-$2")}
+function isValidCnpj(value){const c=onlyDigits(value);if(c.length!==14||/^(\d)\1+$/.test(c))return false;const calc=(base,weights)=>{const sum=base.split("").reduce((acc,n,i)=>acc+Number(n)*weights[i],0);const mod=sum%11;return mod<2?0:11-mod};const d1=calc(c.slice(0,12),[5,4,3,2,9,8,7,6,5,4,3,2]);const d2=calc(c.slice(0,12)+d1,[6,5,4,3,2,9,8,7,6,5,4,3,2]);return c.endsWith(`${d1}${d2}`)}
+function isValidEmail(value){return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(value)}
+function isValidPhone(value){return onlyDigits(value).length>=10}
+function setStatus(message,type="ok"){statusBox.textContent=message;statusBox.className=`status show ${type==="warn"?"warn":""}`;statusBox.scrollIntoView({behavior:"smooth",block:"center"})}
+function getLead(){const data=new FormData(form);const lead={};data.forEach((value,key)=>lead[key]=String(value).trim()||"Não informado");lead["Data do envio"]=new Date().toLocaleString("pt-BR",{timeZone:"America/Sao_Paulo"});lead["Página"]="Edital PGDAU 11/2025";return lead}
+function leadText(lead){return Object.entries(lead).map(([key,value])=>`${key}: ${value}`).join("\n")}
+function saveLead(lead){const leads=JSON.parse(localStorage.getItem(CONFIG.storageKey)||"[]");leads.push(lead);localStorage.setItem(CONFIG.storageKey,JSON.stringify(leads))}
+function downloadLead(lead){const blob=new Blob([JSON.stringify(lead,null,2)],{type:"application/json;charset=utf-8"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download=`lead-pgdau-${Date.now()}.json`;document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url)}
+function validate(){
+  let ok=true;
+  form.querySelectorAll("[required]").forEach(input=>{const field=input.closest(".field");const valid=input.value.trim().length>0;field.classList.toggle("invalid",!valid);if(!valid)ok=false});
+  const checks=[[cnpj,isValidCnpj(cnpj.value)],[document.getElementById("email"),isValidEmail(document.getElementById("email").value)],[whatsapp,isValidPhone(whatsapp.value)]];
+  checks.forEach(([input,valid])=>{input.closest(".field").classList.toggle("invalid",!valid);if(!valid)ok=false});
+  return ok;
+}
+cnpj.addEventListener("input",e=>e.target.value=maskCnpj(e.target.value));
+whatsapp.addEventListener("input",e=>e.target.value=maskPhone(e.target.value));
+form.addEventListener("input",e=>{const field=e.target.closest(".field");if(field)field.classList.remove("invalid")});
+document.getElementById("copyLead").addEventListener("click",async()=>{const lead=getLead();try{await navigator.clipboard.writeText(leadText(lead));setStatus("Dados copiados. Você pode colar em e-mail, WhatsApp ou CRM.","ok")}catch{setStatus("Não consegui acessar a área de transferência neste navegador.","warn")}});
+form.addEventListener("submit",e=>{
+  e.preventDefault();
+  if(!validate()){setStatus("Revise os campos destacados antes de enviar.","warn");return}
+  const lead=getLead();
+  dataEnvio.value=lead["Data do envio"];
+  saveLead(lead);
+  downloadLead(lead);
+  const submitButton=form.querySelector("button[type='submit']");
+  submitButton.textContent="Enviando...";
+  submitButton.disabled=true;
+  if(navigator.onLine){setStatus("Dados validados. Enviando a solicitação...","ok");HTMLFormElement.prototype.submit.call(form);return}
+  const body=encodeURIComponent(`Olá,\n\nRecebemos uma solicitação de análise inicial para o Edital PGDAU 11/2025.\n\n${leadText(lead)}\n\nAtenciosamente.`);
+  window.location.href=`mailto:${CONFIG.destinationEmail}?subject=${encodeURIComponent(CONFIG.subject)}&body=${body}`;
+  setStatus("Sem conexão detectada. Baixei uma cópia em JSON e abri o e-mail preenchido como alternativa.","warn");
+  submitButton.textContent="Enviar";
+  submitButton.disabled=false;
+});
+</script>
+</body>
+</html>
